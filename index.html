@@ -1,21 +1,36 @@
 <!DOCTYPE html>
-<html lang="sq">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Faqja ime e parë</title>
+    <title>Faqja Testuese Gabim</title>
 </head>
 <body>
 
-    <h1>Përshëndetje nga HTML!</h1>
-    
-    <p>Ky është një paragraf i thjeshtë në faqen time të re.</p>
-    
-    <ul>
-        <li>Elementi i parë i listës</li>
-        <li>Elementi i dytë i listës</li>
-    </ul>
+    <h1>Mirësevini në Faqen Time</h1>
 
-    <a href="https://www.google.com">Klikoni këtu për të vizituar Google</a>
+    <div style="color: red; font-size: 50px; margin-left: 100px; background-color: yellow;">
+        Ky tekst është shumë i shëmtuar dhe i vështirë për t'u mirëmbajtur!
+    </div>
+
+    <input type="text" id="username" placeholder="Shkruaj emrin këtu...">
+
+    <button onclick="alert('Kodi u ekzekutua direkt!')">Kliko këtu</button>
+
+    <script>
+        var API_KEY = "12345-ABCDE-SECRET-KEY"; 
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name');
+        
+        document.body.innerHTML += "<h2>Përshëndetje " + name + "</h2>";
+
+        var x = 10;
+        if (true) {
+            var x = 20;
+        }
+        console.log(x);
+    </script>
+
+    <img src="https://via.placeholder.com/150">
 
 </body>
 </html>
